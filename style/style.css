@@ -1,0 +1,130 @@
+:root {
+  /* colors */
+  --clr-primary: #071192;
+  --clr-secondary: #2C2C2C;
+  --clr-background: #EEEEEED1;
+
+  /* font weights */
+  --fw-bld: bold;
+  --fw-blk: black;
+
+  /* font sizes */
+  --fs-reg: 1rem;
+  --fs-md: 1.25rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 2.25rem;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  color: var(--clr-primary);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* =============================== */
+body {
+  background-color: white;
+  background-image: url(../assets/img-bg@2x.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Layout */
+
+body {
+  padding-inline: min(16rem, 10%);
+  padding-block: min(15rem, 10%);
+}
+
+main {
+  background-color: var(--clr-background);
+  width: min(568px, 100%);
+  padding-block: min(4.6rem, 5%);
+  padding-inline: 2rem;
+}
+
+.window {
+  width: min(417px, 100%);
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+.call {
+  padding-bottom: 2rem;
+  max-width: 25rem;
+}
+
+.fname,
+.mail {
+  padding-bottom: 2rem;
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--fs-xl);
+  padding-bottom: 1rem;
+}
+
+p {
+  color: var(--clr-secondary);
+}
+
+label,
+button {
+  font-weight: var(--fw-bld);
+}
+
+label {
+  color: var(--clr-secondary);
+  width: 100%;
+}
+
+input {
+  font-size: var(--fs-lg);
+  width: min(300px, 100%);
+}
+
+button {
+  font-size: var(--fs-lg);
+}
+
+/* cosmetics */
+
+input {
+  border-radius: 0;
+  border: none;
+  border-bottom: 4px solid var(--clr-primary);
+  font-size: var(--fs-lg);
+}
+
+button {
+  background-color: var(--clr-primary);
+  color: white;
+  border: none;
+  padding: 9px 48px;
+}
+
+button:hover {
+  background-color: #050d7c;
+}
